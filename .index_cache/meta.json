@@ -1,0 +1,8 @@
+{
+  "root_path": "C:\\lhq\\work\\hyh_knowledge_lab\\library",
+  "snapshot": "1524a300e9ff1354d48684cdd683b5778b54d6c55871f666a5b95c5c70ec27a9",
+  "chunk_size": 1200,
+  "chunk_overlap": 200,
+  "retriever_type": "hybrid",
+  "vector_support": true
+}

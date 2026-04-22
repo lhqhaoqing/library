@@ -1,0 +1,12 @@
+faiss-cpu
+gradio
+jieba
+langchain-community
+numpy
+openpyxl
+pdfplumber
+PyYAML
+python-docx
+qwen-agent[rag,code_interpreter]
+rank-bm25
+watchfiles
