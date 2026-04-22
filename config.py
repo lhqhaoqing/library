@@ -20,8 +20,6 @@ def load_config(config_path: str = None) -> dict:
     api_key_env = model_cfg.get('dashscope_api_key_env', 'DASHSCOPE_API_KEY')
     if os.getenv(api_key_env):
         model_cfg['api_key'] = os.getenv(api_key_env)
-    else:
-        model_cfg['api_key'] = 'sk-f01ac7185e714813b873e686e2baf183'
     config['model'] = model_cfg
 
     config['knowledge_dir'] = str((ROOT / config.get('knowledge_dir', 'library')).resolve())
