@@ -1,13 +1,38 @@
-faiss-cpu
-gradio
-jieba
-langchain-community
-numpy
-openpyxl
-pdfplumber
-PyYAML
-python-docx
-qwen-agent[rag,code_interpreter]
-rank-bm25
-watchfiles
-FlagEmbedding
+# ============================================
+# 智能知识库问答系统 - 依赖清单
+# ============================================
+# 最后更新: 2026-04-23
+# Python版本要求: >= 3.8
+# ============================================
+
+# ---- 核心框架 ----
+qwen-agent[rag,code_interpreter]  # Qwen-Agent框架(含RAG和代码解释器)
+
+# ---- Web界面 ----
+gradio>=4.0.0  # Web UI框架
+
+# ---- 向量检索 ----
+faiss-cpu>=1.7.0  # 向量数据库(CPU版本)
+langchain-community>=0.0.10  # LangChain社区版(用于Embeddings)
+numpy>=1.24.0  # 数值计算库
+
+# ---- 文本处理 ----
+jieba>=0.42.1  # 中文分词
+rank-bm25>=0.2.2  # BM25算法实现
+
+# ---- 文档解析 ----
+pdfplumber>=0.10.0  # PDF文件解析
+python-docx>=1.0.0  # Word文档解析
+openpyxl>=3.1.0  # Excel文件解析
+PyYAML>=6.0  # YAML配置文件解析
+
+# ---- 文件监听 ----
+watchfiles>=0.20.0  # 文件系统监听(热更新)
+
+# ---- 可选依赖 ----
+FlagEmbedding  # Rerank重排序模型(需要时取消注释)
+# dashscope  # 阿里云DashScope SDK(qwen-agent已包含)
+
+# ---- 开发工具 (可选) ----
+# pylint  # 代码静态检查
+# pytest  # 单元测试框架

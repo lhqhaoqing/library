@@ -19,6 +19,8 @@
 .venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
+> 📚 详细依赖说明请查看 [docs/DEPENDENCIES.md](docs/DEPENDENCIES.md)
+
 2. 设置 DashScope API Key（若使用 `dashscope` 模型）
 
 ```bash
@@ -71,5 +73,6 @@ set DASHSCOPE_API_KEY=your_api_key
 
 ### 规范文档
 - [文档管理规范](docs/DOCUMENTATION_GUIDE.md) - 文档存放和命名规范
+- [依赖说明](docs/DEPENDENCIES.md) - 项目依赖清单和安装指南
 
 > 💡 **提示**: 未来所有新文档都应放在 `docs/` 目录下，详见[文档管理规范](docs/DOCUMENTATION_GUIDE.md)。
