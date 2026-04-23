@@ -10,3 +10,4 @@ python-docx
 qwen-agent[rag,code_interpreter]
 rank-bm25
 watchfiles
+FlagEmbedding

@@ -1,3 +1,4 @@
+import logging
 import os
 from pathlib import Path
 from typing import Any, Dict, Iterator, List
@@ -5,6 +6,8 @@ from typing import Any, Dict, Iterator, List
 import pdfplumber
 import docx
 import openpyxl
+
+logger = logging.getLogger(__name__)
 
 SUPPORTED_EXTENSIONS = {'.pdf', '.docx', '.txt', '.md', '.xlsx'}
 
@@ -31,7 +34,7 @@ def iter_text_segments(root_path: str) -> Iterator[Dict[str, Any]]:
             elif path.suffix.lower() == '.xlsx':
                 yield from parse_xlsx(path)
         except Exception as exc:
-            print(f'Warning: failed to parse {path}: {exc}')
+            logger.warning(f'Failed to parse {path}: {exc}', exc_info=True)
 
 
 def parse_pdf(path: Path) -> Iterator[Dict[str, Any]]:

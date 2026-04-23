@@ -18,3 +18,13 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+knowledge_base.log
+
+# Evaluation data
+eval_logs/
+
+# Test scripts (optional, uncomment if needed)
+# test_*.py

@@ -20,10 +20,16 @@ retriever:
   chunk_overlap: 200
   bm25_weight: 0.4
   vector_weight: 0.6
-  rerank: false
+  rerank: true
   type: hybrid
 tools:
   enable_code_interpreter: false
+cache:
+  enabled: true
+  capacity: 100
+  ttl: 3600
+evaluation:
+  enabled: true
 watch:
   enabled: true
   paths:

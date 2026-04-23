@@ -51,3 +51,25 @@ set DASHSCOPE_API_KEY=your_api_key
 - 采用 BM25 与向量检索混合检索策略。
 - 支持对话记忆与检索上下文约束回答。
 - 提供 Gradio Web 界面与命令行两种交互方式。
+
+## 📚 文档索引
+
+所有项目文档统一存放在 `docs/` 目录下：
+
+### 核心文档
+- [需求文档](docs/需求文档.md) - 产品需求和功能设计
+- [完整优化总结](docs/FINAL_SUMMARY.md) - 系统优化完整报告
+
+### 优化文档
+- [第一批优化](docs/OPTIMIZATION_SUMMARY.md) - 高/中优先级优化(7项)
+- [第二批优化](docs/NEW_FEATURES.md) - 低优先级新功能(4项)
+
+### Bug修复
+- [流式输出修复](docs/BUGFIX_STREAMING.md) - Web界面无返回问题
+- [System Message修复](docs/FIX_SYSTEM_MESSAGE.md) - API 400错误修复
+- [NameError修复](docs/FIX_NAMEERROR_SOURCES.md) - 变量未定义问题
+
+### 规范文档
+- [文档管理规范](docs/DOCUMENTATION_GUIDE.md) - 文档存放和命名规范
+
+> 💡 **提示**: 未来所有新文档都应放在 `docs/` 目录下，详见[文档管理规范](docs/DOCUMENTATION_GUIDE.md)。
