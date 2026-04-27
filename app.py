@@ -372,7 +372,7 @@ def launch_ui(agent: KnowledgeAgent, config: dict) -> None:
         feedback_good.click(fn=lambda: handle_feedback(True), outputs=[feedback_status])
         feedback_bad.click(fn=lambda: handle_feedback(False), outputs=[feedback_status])
 
-        demo.launch(server_name=config['app'].get('host', '0.0.0.0'), server_port=config['app'].get('port', 80))
+        demo.launch(server_name=config['app'].get('host', '0.0.0.0'), server_port=config['app'].get('port', 7680))
 
 
 def main() -> None:
